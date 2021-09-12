@@ -6,7 +6,10 @@ class App extends Component {
 
   render() {
     return(
-      <NavBar />
+      <main>
+        <NavBar />
+        <Difficulty />
+      </main>
     )
   }
 }
