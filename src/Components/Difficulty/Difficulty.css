@@ -1,0 +1,11 @@
+.button-container {
+  width: 100%;
+  padding-top: 25vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.button {
+  width: 25vw;
+  height: auto;
+}
