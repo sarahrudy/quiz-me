@@ -1,13 +1,21 @@
-import React, { Component } from 'react'
+import React from 'react'
+import Card from '../Card/Card'
+import triviaData from '../../datafiles/mockData'
 import '../Questions/Questions.css'
 
-class Questions extends Component {
+const Questions = () => {
+  const triviaQuestions = triviaData.results.map(question => {
+    <Card 
 
-  render() {
-    return(
-      <h2>Questions go here</h2>
-    )
-  }
+    />
+})
+
+
+  return(
+    <div className="questions-container">
+      { triviaQuestions }
+    </div>
+  )
 }
 
 export default Questions
