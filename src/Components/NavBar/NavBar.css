@@ -1,0 +1,14 @@
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  width: 100%;
+  position: fixed;
+  background-color: darkgrey;
+}
+
+.logo {
+  height: 15vh;
+  width: auto;
+}
