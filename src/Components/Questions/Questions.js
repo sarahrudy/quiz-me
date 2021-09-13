@@ -5,9 +5,10 @@ import '../Questions/Questions.css'
 
 const Questions = () => {
   const triviaQuestions = triviaData.results.map(question => {
-    <Card 
+    return (
 
-    />
+      <Card />
+      )
 })
 
 

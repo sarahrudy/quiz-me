@@ -1,7 +1,7 @@
 const Card = () => {
  return (
    <div className="card-container">
-     <p>Card</p>
+     <h1>Card</h1>
    </div>
  )
 }
