@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import NavBar from '../NavBar/NavBar'
-import Difficulty from '../Difficulty/Difficulty'
+import TriviaDifficulty from '../TriviaDifficulty/TriviaDifficulty'
 import Questions from '../Questions/Questions'
 import './App.css'
 
@@ -11,7 +11,7 @@ class App extends Component {
       <main>
         <NavBar />
         <section>
-        <Difficulty />
+        <TriviaDifficulty />
         <Questions />
         </section>
       </main>

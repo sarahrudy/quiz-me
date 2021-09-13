@@ -1,10 +1,10 @@
 import React from 'react'
-import '../Difficulty/Difficulty.css'
+import '../TriviaDifficulty/TriviaDifficulty.css'
 import easy from '../../Images/easy_btn.png'
 import medium from '../../Images/medium_btn.png'
 import hard from '../../Images/hard_btn.png'
 
-const Difficulty = () => {
+const TriviaDifficulty = () => {
 
   return(
     <div className="button-container">
@@ -15,4 +15,4 @@ const Difficulty = () => {
   )
 }
 
-export default Difficulty
+export default TriviaDifficulty
