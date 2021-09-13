@@ -3,6 +3,7 @@ import easy from '../../Images/easy_btn.png'
 import medium from '../../Images/medium_btn.png'
 import hard from '../../Images/hard_btn.png'
 import { Link } from 'react-router-dom'
+
 import '../TriviaDifficulty/TriviaDifficulty.css'
 
 const TriviaDifficulty = () => {
