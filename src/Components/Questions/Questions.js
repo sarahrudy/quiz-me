@@ -7,7 +7,9 @@ const Questions = () => {
   const triviaQuestions = triviaData.results.map(question => {
     return (
 
-      <Card />
+      <Card 
+        questions = {question}
+      />
       )
 })
 
