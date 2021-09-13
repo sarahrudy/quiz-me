@@ -16,13 +16,13 @@ const TriviaDifficulty = () => {
         return (
           <div className="button-container">
             <Link to="/questions/easy">
-              <img src= { easy } className="button" alt="easy button" onClick={ selectDifficulty}></img>
+              <img src= { easy } className="button" alt="easy button" onClick={() => selectDifficulty('easy')}></img>
             </Link>
             <Link to="/questions/medium">
-              <img src= { medium } className="button" alt="medium button"></img>
+              <img src= { medium } className="button" alt="medium button" onClick={() => selectDifficulty('medium')}></img>
             </Link>
             <Link to="/questions/hard">
-              <img src= { hard } className="button" alt="hard button"></img>
+              <img src= { hard } className="button" alt="hard button" onClick={() => selectDifficulty('hard')}></img>
             </Link>
           </div>
         )
