@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Card from '../Card/Card'
 import triviaData from '../../datafiles/mockData'
 import '../Questions/Questions.css'
+import { fetchData } from '../../apiCalls'
 
-const Questions = () => {
+const Questions = (props) => {
+  useEffect(() => {
+    console.log('useEffect')
+    fetchData('easy')
+  }, [])
+
   const triviaQuestions = triviaData.results.map(question => {
     return (
 
