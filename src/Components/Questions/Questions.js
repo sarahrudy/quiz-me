@@ -19,6 +19,7 @@ const Questions = (props) => {
         question = {question}
         position = {difficulty.questions.indexOf(question)}
         length = {difficulty.questions.length}
+        key = {difficulty.questions.indexOf(question)}
       />
     )
   })
