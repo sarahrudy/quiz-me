@@ -9,7 +9,7 @@ const Questions = (props) => {
   const difficulty = useContext(DifficultyContext)
   useEffect(() => {
     console.log('useEffect')
-    fetchData('easy')
+    fetchData(difficulty.difficulty)
     .then(data => difficulty.setQuestions(data))
   }, [])
 
