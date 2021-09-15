@@ -11,12 +11,14 @@ class App extends Component {
   render() {
     return(
       <main>
-        <NavBar />
-        <section>
-          <Route exact path='/' component= { TriviaDifficulty } />
-          <Route exact path='/questions/:difficulty' render={({ match }) => {
-            return < Questions /> }} />
-        </section>
+        <DifficultyContextProvider>
+          <NavBar />
+          <section>
+            <Route exact path='/' component= { TriviaDifficulty } />
+            <Route exact path='/questions/:difficulty' render={({ match }) => {
+              return < Questions /> }} />
+          </section>
+        </DifficultyContextProvider>
       </main>
     )
   }
