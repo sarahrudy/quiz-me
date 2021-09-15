@@ -7,7 +7,7 @@ class DifficultyContextProvider extends Component {
     super()
     this.state = {
       difficulty: '',
-      questions: null,
+      questions: []
     }
   }
 
