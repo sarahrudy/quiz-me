@@ -28,7 +28,7 @@ class CardInfo {
   }
 
   findCorrectIndex() {
-    this.correctAnswerIndex = this.answers.indexOf(this.data.correct_answer)
+    this.correctAnswerIndex = 'a' + this.answers.indexOf(this.data.correct_answer)
   }
 }
 
