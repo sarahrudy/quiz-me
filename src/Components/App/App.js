@@ -3,6 +3,7 @@ import NavBar from '../NavBar/NavBar'
 import TriviaDifficulty from '../TriviaDifficulty/TriviaDifficulty'
 import Questions from '../Questions/Questions'
 import { Route } from 'react-router'
+import DifficultyContextProvider from '../../context/DifficultyContextProvider'
 import './App.css'
 
 class App extends Component {
