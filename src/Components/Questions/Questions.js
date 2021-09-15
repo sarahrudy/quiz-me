@@ -13,22 +13,15 @@ const Questions = (props) => {
     .then(data => difficulty.setQuestions(data))
   }, [])
 
-  let triviaQuestions
-
-  if (difficulty.questions !== null) {
-
-    triviaQuestions = difficulty.questions.map(question => {
-      return (
-        
-        <Card 
+  const triviaQuestions = difficulty.questions.map(question => {
+    return (
+      <Card 
         question = {question}
         position = {difficulty.questions.indexOf(question)}
         length = {difficulty.questions.length}
-        />
-        )
-      })
-    }
-
+      />
+    )
+  })
 
   return(
     <div className="questions-container">

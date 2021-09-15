@@ -15,8 +15,7 @@ class App extends Component {
           <NavBar />
           <section>
             <Route exact path='/' component= { TriviaDifficulty } />
-            <Route exact path='/questions/:difficulty' render={({ match }) => {
-              return <Questions /> }} />
+            <Route exact path='/questions/:difficulty' component= { Questions }/>
           </section>
         </DifficultyContextProvider>
       </main>
