@@ -13,23 +13,52 @@ const Card = ({ question, length, position }) => {
      <div className="middle-info">
       <p className="question">{info.question}</p>
      </div>
-     <form className="answers-container">    
-        <div className="answers">
-          <input type="radio" name="answer" value="a0"></input>
-          <label htmlFor="a0">{info.answers[0]}</label>
+     <form className="answers-container">   
+      <div className="answers">
+          <label>
+            <input
+              type="radio"
+              name="answers"
+              value="a0"
+              className="form-check-input"
+            />
+            {info.answers[0]}
+          </label>
         </div>
         <div className="answers">
-          <input type="radio" name="answer" value="a1"></input>
-          <label htmlFor="a1">{info.answers[1]}</label>
+          <label>
+            <input
+              type="radio"
+              name="answers"
+              value="a1"
+              className="form-check-input"
+            />
+            {info.answers[1]}
+          </label>
         </div>
         <div className="answers">
-          <input type="radio" name="answer" value="a2"></input>
-          <label htmlFor="a2">{info.answers[2]}</label>
+          <label>
+            <input
+              type="radio"
+              name="answers"
+              value="a2"
+              className="form-check-input"
+            />
+            {info.answers[2]}
+          </label>
         </div>
         <div className="answers">
-          <input type="radio" name="answer" value="a3"></input>
-          <label htmlFor="a3">{info.answers[3]}</label>
+          <label>
+            <input
+              type="radio"
+              name="answers"
+              value="a3"
+              className="form-check-input"
+            />
+            {info.answers[3]}
+          </label>
         </div>
+      
      </form>
    </div>
  )

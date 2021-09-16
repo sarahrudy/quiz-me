@@ -28,7 +28,7 @@ const Questions = (props) => {
     <div className="questions-container">
       { triviaQuestions }
       <div className="submit-container">
-        <img src= { submitBtn } className="submit-btn"></img>
+        <img src= { submitBtn } className="submit-btn" alt="submit button"></img>
       </div>
     </div>
   )

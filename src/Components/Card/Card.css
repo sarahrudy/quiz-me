@@ -22,6 +22,10 @@
   align-content: center;
 }
 
+input {
+  margin-right: 10px;
+}
+
 label {
   font-size: 3vh;
 }
