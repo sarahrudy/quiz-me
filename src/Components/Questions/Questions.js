@@ -5,7 +5,7 @@ import { fetchData } from '../../apiCalls'
 import { DifficultyContext } from '../../context/DifficultyContextProvider'
 import submitBtn from '../../Images/submit_btn.png'
 
-const Questions = (props) => {
+const Questions = () => {
   const difficulty = useContext(DifficultyContext)
   
   useEffect(() => {
