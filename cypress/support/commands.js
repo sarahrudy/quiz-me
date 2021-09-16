@@ -8,8 +8,8 @@
 // https://on.cypress.io/custom-commands
 // ***********************************************
 
-  Cypress.Commands.add('getQuestions', (url) => {
-    cy.intercept('GET', `${url}`, {
+  Cypress.Commands.add('getQuestions', (diff) => {
+    cy.intercept('GET', `https://opentdb.com/api.php?amount=10&difficulty=${diff}&type=multiple`, {
       body: {
         "results": [
           {
