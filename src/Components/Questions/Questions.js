@@ -1,9 +1,9 @@
 import React, { useEffect, useContext } from 'react'
 import Card from '../Card/Card'
-// import triviaData from '../../datafiles/mockData'
 import '../Questions/Questions.css'
 import { fetchData } from '../../apiCalls'
 import { DifficultyContext } from '../../context/DifficultyContextProvider'
+import submitBtn from '../../Images/submit_btn.png'
 
 const Questions = (props) => {
   const difficulty = useContext(DifficultyContext)
@@ -27,6 +27,9 @@ const Questions = (props) => {
   return(
     <div className="questions-container">
       { triviaQuestions }
+      <div className="submit-container">
+        <img src= { submitBtn } className="submit-btn"></img>
+      </div>
     </div>
   )
 }
