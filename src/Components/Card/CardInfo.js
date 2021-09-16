@@ -17,8 +17,8 @@ class CardInfo {
     this.question = ques.replaceAll('&#039;', `'`).replaceAll('&quot;', `"`).replaceAll(' &amp;', '&')
   }
 
-  compileAnswers(incorrects, correct) {
-    this.answers = [...incorrects, correct].sort()
+  compileAnswers(incorrectAnswers, correctAnswers) {
+    this.answers = [...incorrectAnswers, correctAnswers].sort()
   }
 
   formatAnswers() {
