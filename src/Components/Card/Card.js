@@ -10,7 +10,9 @@ const Card = ({ question, length, position }) => {
       <h3>{info.category}</h3>
       <p>{ position + 1}/{ length }</p>
      </div>
-     <p className="question">{info.question}</p>
+     <div className="middle-info">
+      <p className="question">{info.question}</p>
+     </div>
      <form className="answers-container">    
         <div>
           <input type="radio" name="answer" value="a0"></input>
