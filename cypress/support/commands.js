@@ -7,8 +7,52 @@
 // commands please read more here:
 // https://on.cypress.io/custom-commands
 // ***********************************************
-//
-//
+
+  Cypress.Commands.add('getQuestions', (diff) => {
+    cy.intercept('GET', `https://opentdb.com/api.php?amount=10&difficulty=${diff}&type=multiple`, {
+      body: {
+        "results": [
+          {
+            "category": "Entertainment: Video Games",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "When was the Sega Genesis released in Japan?",
+            "correct_answer": "October 29, 1988",
+            "incorrect_answers": [
+              "August 14, 1989",
+              "November 30, 1990",
+              "September 1, 1986"
+            ]
+          },
+          {
+            "category": "Entertainment: Books",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "What is the fourth book of the Old Testament?",
+            "correct_answer": "Numbers",
+            "incorrect_answers": [
+              "Genesis",
+              "Exodus",
+              "Leviticus"
+            ]
+          },
+          {
+            "category": "Entertainment: Japanese Anime & Manga",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "How does the character Dragowizard, Qinus Axia&#039;s from the anime &quot;Buddyfight&quot; differ between the Japanese and English dubs?",
+            "correct_answer": "Different Gender",
+            "incorrect_answers": [
+              "Different Body Proportions",
+              "Different Backstory",
+              "Different Appearance"
+            ]
+          }
+        ]
+      }
+    })
+  })
+
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })
 //
