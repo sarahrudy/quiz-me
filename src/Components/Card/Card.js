@@ -1,4 +1,5 @@
 import CardInfo from './CardInfo'
+import Answers from '../Answers/Answers'
 import '../Card/Card.css'
 
 const Card = ({ question, length, position }) => {
@@ -10,24 +11,11 @@ const Card = ({ question, length, position }) => {
       <h3>{info.category}</h3>
       <p>{ position + 1}/{ length }</p>
      </div>
-     <p className="question">{info.question}</p>
-     <form className="answers-container">    
-        <div>
-          <input type="radio" name="answer" value="a0"></input>
-          <label htmlFor="a0">{info.answers[0]}</label>
-        </div>
-        <div>
-          <input type="radio" name="answer" value="a1"></input>
-          <label htmlFor="a1">{info.answers[1]}</label>
-        </div>
-        <div>
-          <input type="radio" name="answer" value="a2"></input>
-          <label htmlFor="a2">{info.answers[2]}</label>
-        </div>
-        <div>
-          <input type="radio" name="answer" value="a3"></input>
-          <label htmlFor="a3">{info.answers[3]}</label>
-        </div>
+     <div className="middle-info">
+      <p className="question">{info.question}</p>
+     </div>
+     <form className="bottom-answers">
+       <Answers answerList={info.answers}/>
      </form>
    </div>
  )

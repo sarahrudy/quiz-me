@@ -2,13 +2,14 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20vh;
+  height: 15vh;
   width: 100%;
   position: fixed;
-  background-color: darkgrey;
+  background-color: rgb(0, 0, 0);
 }
 
 .logo {
-  height: 15vh;
+  height: 13vh;
   width: auto;
+  opacity: 1;
 }

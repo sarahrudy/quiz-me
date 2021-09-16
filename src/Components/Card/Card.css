@@ -1,3 +1,35 @@
 .card-container {
   background-color: white;
+  padding: 35px;
+  margin: 15px;
+  max-width: 80vw;
+  border-radius: 20px;
+}
+
+.top-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.middle-info {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.question {
+  font-size: 3.5vh;
+  align-content: center;
+}
+
+input {
+  margin-right: 10px;
+}
+
+label {
+  font-size: 3vh;
+}
+
+.answers {
+  margin: 10px;
 }
