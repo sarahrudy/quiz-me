@@ -15,9 +15,16 @@ const Questions = () => {
   }, [])
 
   const validateAnswers = () => {
+    const scoreData = difficulty.correctAnswers.reduce((arr, elem, i) => {
+      arr[1] = difficulty.correctAnswers.length
+      if (elem === difficulty.submittedAnswers[`q${i}`]) {
+        arr[0]++
+      }
+
+      return arr
+    }, [0, 0])
     
-    
-    difficulty.submitUserScore()
+    difficulty.submitUserScore(scoreData)
   }
 
   const triviaQuestions = difficulty.questions.map(question => {
@@ -33,7 +40,7 @@ const Questions = () => {
 
   return(
     <div className="questions-container">
-      {difficulty.userScore && <Score />}
+      {/* {difficulty.userScore && <Score />} */}
       { triviaQuestions }
       <div className="submit-container">
         <img src= { submitBtn } className="submit-btn" alt="submit button"
