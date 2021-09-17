@@ -21,7 +21,7 @@ class DifficultyContextProvider extends Component {
   }
 
   submitAnswer = (question, answer) => {
-    this.setState({ submittedAnswers: {[question]: answer} })
+    this.setState({ submittedAnswers: {...this.state.submittedAnswers, [question]: answer} })
   }
 
   render() {
