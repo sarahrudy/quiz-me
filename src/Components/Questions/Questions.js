@@ -1,5 +1,6 @@
 import React, { useEffect, useContext } from 'react'
 import Card from '../Card/Card'
+import Score from '../Score/Score'
 import '../Questions/Questions.css'
 import { fetchData } from '../../apiCalls'
 import { DifficultyContext } from '../../context/DifficultyContextProvider'
@@ -12,6 +13,12 @@ const Questions = () => {
     fetchData(difficulty.difficulty)
     .then(data => difficulty.setQuestions(data))
   }, [])
+
+  const validateAnswers = () => {
+    
+    
+    difficulty.submitUserScore()
+  }
 
   const triviaQuestions = difficulty.questions.map(question => {
     return (
@@ -26,9 +33,11 @@ const Questions = () => {
 
   return(
     <div className="questions-container">
+      {difficulty.userScore && <Score />}
       { triviaQuestions }
       <div className="submit-container">
-        <img src= { submitBtn } className="submit-btn" alt="submit button" onClick={}></img>
+        <img src= { submitBtn } className="submit-btn" alt="submit button"
+        onClick={() => validateAnswers()}></img>
       </div>
     </div>
   )

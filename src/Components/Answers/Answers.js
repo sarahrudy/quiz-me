@@ -4,7 +4,7 @@ import { DifficultyContext } from "../../context/DifficultyContextProvider"
 const Answers = ({answerList, questionNumber}) => {
   const difficulty = useContext(DifficultyContext)
 
- const handleChange = (e) => {
+  const handleChange = (e) => {
     const { name, value } = e.target
 
     difficulty.submitAnswer(name, value)

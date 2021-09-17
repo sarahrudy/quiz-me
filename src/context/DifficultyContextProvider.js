@@ -29,9 +29,13 @@ class DifficultyContextProvider extends Component {
     this.state.correctAnswers.push(answer)
   }
 
+  submitUserScore = (score) => {
+    this.setState({ userScore: score})
+  }
+
   render() {
     return (
-      <DifficultyContext.Provider value={{...this.state, selectDifficulty: this.selectDifficulty, setQuestions: this.setQuestions, submitAnswer: this.submitAnswer, submitAnswerKey: this.submitAnswerKey }}>
+      <DifficultyContext.Provider value={{...this.state, selectDifficulty: this.selectDifficulty, setQuestions: this.setQuestions, submitAnswer: this.submitAnswer, submitAnswerKey: this.submitAnswerKey, submitUserScore: this.submitUserScore }}>
         {this.props.children}
       </DifficultyContext.Provider>
     )

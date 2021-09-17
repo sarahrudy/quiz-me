@@ -14,7 +14,7 @@ class CardInfo {
   }
 
   formatQuestion(ques) {
-    this.question = ques.replaceAll('&#039;', `'`).replaceAll('&quot;', `"`).replaceAll(' &amp;', '&').replaceAll('&ldquo;', `'`).replaceAll('&rdquo;', `'`)
+    this.question = ques.replaceAll('&#039;', `'`).replaceAll('&quot;', `"`).replaceAll(' &amp;', '&').replaceAll('&ldquo;', `'`).replaceAll('&rdquo;', `'`).replaceAll('&pi;', 'π')
   }
 
   compileAnswers(incorrectAnswers, correctAnswers) {
@@ -23,7 +23,7 @@ class CardInfo {
 
   formatAnswers() {
     this.answers = this.answers.map(answer => {
-      return answer.replaceAll('&#039;', `'`).replaceAll('&quot;', `"`).replaceAll(' &amp;', '&')
+      return answer.replaceAll('&#039;', `'`).replaceAll('&quot;', `"`).replaceAll(' &amp;', '&').replaceAll('&ldquo;', `'`).replaceAll('&rdquo;', `'`).replaceAll('&pi;', 'π')
     })
   }
 
