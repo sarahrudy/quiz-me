@@ -1,9 +1,21 @@
 import CardInfo from './CardInfo'
 import Answers from '../Answers/Answers'
+import React, { useContext, useEffect } from "react"
+import { DifficultyContext } from "../../context/DifficultyContextProvider"
 import '../Card/Card.css'
 
 const Card = ({ question, length, position }) => {
-  let info = new CardInfo(question)
+  let info = new CardInfo(question, position)
+
+  const difficulty = useContext(DifficultyContext)
+
+  const submitCorrectAnswer = (answer) => {
+    difficulty.submitAnswerKey(answer)
+  }
+
+  useEffect(() => {
+    submitCorrectAnswer(info.correctAnswerIndex)
+  }, [])
 
  return (
    <div className="card-container">

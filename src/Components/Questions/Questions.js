@@ -28,7 +28,7 @@ const Questions = () => {
     <div className="questions-container">
       { triviaQuestions }
       <div className="submit-container">
-        <img src= { submitBtn } className="submit-btn" alt="submit button"></img>
+        <img src= { submitBtn } className="submit-btn" alt="submit button" onClick={}></img>
       </div>
     </div>
   )

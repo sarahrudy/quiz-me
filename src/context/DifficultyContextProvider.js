@@ -8,7 +8,8 @@ class DifficultyContextProvider extends Component {
     this.state = {
       difficulty: '',
       questions: [],
-      submittedAnswers: {}
+      submittedAnswers: {},
+      correctAnswers: []
     }
   }
 
@@ -24,9 +25,13 @@ class DifficultyContextProvider extends Component {
     this.setState({ submittedAnswers: {...this.state.submittedAnswers, [question]: answer} })
   }
 
+  submitAnswerKey = (answer) => {
+    this.state.correctAnswers.push(answer)
+  }
+
   render() {
     return (
-      <DifficultyContext.Provider value={{...this.state, selectDifficulty: this.selectDifficulty, setQuestions: this.setQuestions, submitAnswer: this.submitAnswer }}>
+      <DifficultyContext.Provider value={{...this.state, selectDifficulty: this.selectDifficulty, setQuestions: this.setQuestions, submitAnswer: this.submitAnswer, submitAnswerKey: this.submitAnswerKey }}>
         {this.props.children}
       </DifficultyContext.Provider>
     )

@@ -1,5 +1,5 @@
 class CardInfo {
-  constructor (data) {
+  constructor (data, position) {
     this.data = data
     this.category = data.category
     this.question = data.question
@@ -14,7 +14,7 @@ class CardInfo {
   }
 
   formatQuestion(ques) {
-    this.question = ques.replaceAll('&#039;', `'`).replaceAll('&quot;', `"`).replaceAll(' &amp;', '&')
+    this.question = ques.replaceAll('&#039;', `'`).replaceAll('&quot;', `"`).replaceAll(' &amp;', '&').replaceAll('&ldquo;', `'`).replaceAll('&rdquo;', `'`)
   }
 
   compileAnswers(incorrectAnswers, correctAnswers) {
