@@ -3,6 +3,7 @@ import Card from '../Card/Card'
 import '../Questions/Questions.css'
 import { fetchData } from '../../apiCalls'
 import { DifficultyContext } from '../../context/DifficultyContextProvider'
+import Score from '../Score/Score'
 import submitBtn from '../../Images/submit_btn.png'
 
 const Questions = () => {
@@ -12,6 +13,19 @@ const Questions = () => {
     fetchData(difficulty.difficulty)
     .then(data => difficulty.setQuestions(data))
   }, [])
+
+  const validateAnswers = () => {
+    const scoreData = difficulty.correctAnswers.reduce((arr, elem, i) => {
+      arr[1] = difficulty.correctAnswers.length
+      if (elem === difficulty.submittedAnswers[`q${i}`]) {
+        arr[0]++
+      }
+
+      return arr
+    }, [0, 0])
+    
+    difficulty.submitUserScore(scoreData)
+  }
 
   const triviaQuestions = difficulty.questions.map(question => {
     return (
@@ -26,9 +40,11 @@ const Questions = () => {
 
   return(
     <div className="questions-container">
+      {difficulty.userScore && <Score />}
       { triviaQuestions }
       <div className="submit-container">
-        <img src= { submitBtn } className="submit-btn" alt="submit button"></img>
+        <img src= { submitBtn } className="submit-btn" alt="submit button"
+        onClick={() => validateAnswers()}></img>
       </div>
     </div>
   )
