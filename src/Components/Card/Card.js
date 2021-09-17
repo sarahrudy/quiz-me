@@ -12,7 +12,7 @@ const Card = ({ question, length, position }) => {
       <p>{ position + 1}/{ length }</p>
      </div>
      <div className="middle-info">
-      <p className="question">{info.question}</p>
+      <p className="question" answer={info.correctAnswerIndex}>{info.question}</p>
      </div>
      <form className="bottom-answers">
        <Answers answerList={info.answers}/>
