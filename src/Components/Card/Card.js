@@ -15,7 +15,7 @@ const Card = ({ question, length, position }) => {
       <p className="question" answer={info.correctAnswerIndex}>{info.question}</p>
      </div>
      <form className="bottom-answers">
-       <Answers answerList={info.answers}/>
+       <Answers answerList={info.answers} questionNumber={ position }/>
      </form>
    </div>
  )
