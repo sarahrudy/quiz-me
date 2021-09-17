@@ -1,6 +1,5 @@
 import React, { useEffect, useContext } from 'react'
 import Card from '../Card/Card'
-import Score from '../Score/Score'
 import '../Questions/Questions.css'
 import { fetchData } from '../../apiCalls'
 import { DifficultyContext } from '../../context/DifficultyContextProvider'
@@ -40,7 +39,6 @@ const Questions = () => {
 
   return(
     <div className="questions-container">
-      {/* {difficulty.userScore && <Score />} */}
       { triviaQuestions }
       <div className="submit-container">
         <img src= { submitBtn } className="submit-btn" alt="submit button"
