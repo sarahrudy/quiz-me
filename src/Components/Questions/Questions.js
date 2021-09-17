@@ -3,6 +3,7 @@ import Card from '../Card/Card'
 import '../Questions/Questions.css'
 import { fetchData } from '../../apiCalls'
 import { DifficultyContext } from '../../context/DifficultyContextProvider'
+import Score from '../Score/Score'
 import submitBtn from '../../Images/submit_btn.png'
 
 const Questions = () => {
@@ -39,6 +40,7 @@ const Questions = () => {
 
   return(
     <div className="questions-container">
+      {difficulty.userScore && <Score />}
       { triviaQuestions }
       <div className="submit-container">
         <img src= { submitBtn } className="submit-btn" alt="submit button"
