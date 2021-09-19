@@ -16,6 +16,7 @@ class App extends Component {
           <section>
             <Route exact path='/' component= { TriviaDifficulty } />
             <Route exact path='/questions/:difficulty' component= { Questions }/>
+            <Route exact path='/results' component= { Results } />
           </section>
         </DifficultyContextProvider>
       </main>
