@@ -5,8 +5,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 [Project Spec](https://frontend.turing.edu/projects/module-3/stretch.html)
 
 ### GIF
-
+👇 **Choose difficulty level to load questions from API**
 ![quiz-me-page-load](https://user-images.githubusercontent.com/78389005/134056206-9ba1af83-a89f-4f2a-94ba-f92deba36d35.gif)  
+
+👇 **Answer all ten questions to see how smart you are**
 ![Sep-20-2021 12-49-28](https://user-images.githubusercontent.com/78389005/134058281-c83ce138-815a-482e-bd6f-6ab8639a9c69.gif)
 
 ### Learning Goals
