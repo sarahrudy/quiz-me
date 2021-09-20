@@ -11,11 +11,11 @@ const Results = () => {
 
   return (
       <div className="results-container">
-        <img src={ resultPrompt } className='result-prompt'></img>
+        <img src={ resultPrompt } alt="'You're so smart' banner" className='result-prompt'></img>
         <div>
           { difficulty.userScore && <p className='user-prompt'>You got {difficulty.userScore[0]} out of {difficulty.userScore[1]} correct!</p> }
         </div>
-        <Link to='/'><img src= { playAgain } className="play-again-btn" onClick={ () => difficulty.clearInputs()}></img></Link>
+        <Link to='/'><img src= { playAgain } alt="Play again button" className="play-again-btn" onClick={ () => difficulty.clearInputs()}></img></Link>
       </div>
   )
 }
