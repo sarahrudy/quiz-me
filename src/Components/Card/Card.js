@@ -15,7 +15,7 @@ const Card = ({ question, length, position }) => {
 
   useEffect(() => {
     submitCorrectAnswer(info.correctAnswerIndex)
-  }, [])
+  })
 
  return (
    <div className="card-container">
