@@ -44,10 +44,10 @@ const Questions = () => {
     <div className="questions-container">
         { triviaQuestions }
         <div className="submit-container">
-    <Link to='/results'>
+    { Object.keys(difficulty.submittedAnswers).length === 10  && <Link to='/results'>
           <img src= { submitBtn } className="submit-btn" alt="submit button"
           onClick={() => validateAnswers()}></img>
-    </Link>
+    </Link> }
         </div>
       </div>
   )
