@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/sarahrudy/quiz-me/static/css/main.840d60f9.chunk.css",
+    "main.js": "/sarahrudy/quiz-me/static/js/main.71b8f092.chunk.js",
+    "main.js.map": "/sarahrudy/quiz-me/static/js/main.71b8f092.chunk.js.map",
+    "runtime-main.js": "/sarahrudy/quiz-me/static/js/runtime-main.9b054824.js",
+    "runtime-main.js.map": "/sarahrudy/quiz-me/static/js/runtime-main.9b054824.js.map",
+    "static/js/2.1f5c6d74.chunk.js": "/sarahrudy/quiz-me/static/js/2.1f5c6d74.chunk.js",
+    "static/js/2.1f5c6d74.chunk.js.map": "/sarahrudy/quiz-me/static/js/2.1f5c6d74.chunk.js.map",
+    "index.html": "/sarahrudy/quiz-me/index.html",
+    "static/css/main.840d60f9.chunk.css.map": "/sarahrudy/quiz-me/static/css/main.840d60f9.chunk.css.map",
+    "static/js/2.1f5c6d74.chunk.js.LICENSE.txt": "/sarahrudy/quiz-me/static/js/2.1f5c6d74.chunk.js.LICENSE.txt",
+    "static/media/cloud.6d745804.png": "/sarahrudy/quiz-me/static/media/cloud.6d745804.png",
+    "static/media/easy_btn.91d0d22d.png": "/sarahrudy/quiz-me/static/media/easy_btn.91d0d22d.png",
+    "static/media/hard_btn.0b190b5a.png": "/sarahrudy/quiz-me/static/media/hard_btn.0b190b5a.png",
+    "static/media/logo.9e80d2a2.png": "/sarahrudy/quiz-me/static/media/logo.9e80d2a2.png",
+    "static/media/medium_btn.0d838ba2.png": "/sarahrudy/quiz-me/static/media/medium_btn.0d838ba2.png",
+    "static/media/pagenotfound.d4a1f982.png": "/sarahrudy/quiz-me/static/media/pagenotfound.d4a1f982.png",
+    "static/media/playagain_btn.83eec597.png": "/sarahrudy/quiz-me/static/media/playagain_btn.83eec597.png",
+    "static/media/resultprompt.ba4b43f3.png": "/sarahrudy/quiz-me/static/media/resultprompt.ba4b43f3.png",
+    "static/media/submit_btn.90252f30.png": "/sarahrudy/quiz-me/static/media/submit_btn.90252f30.png",
+    "static/media/App.css": "/sarahrudy/quiz-me/static/media/wallpaper.8dfe6ed5.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9b054824.js",
+    "static/js/2.1f5c6d74.chunk.js",
+    "static/css/main.840d60f9.chunk.css",
+    "static/js/main.71b8f092.chunk.js"
+  ]
+}
