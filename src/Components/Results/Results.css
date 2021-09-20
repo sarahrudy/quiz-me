@@ -1,6 +1,24 @@
 .results-container {
-  color: black;
   margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-prompt {
+  height: 25vh;
+  width: auto;
+}
+
+.user-prompt {
+  align-items: center;
+  font-size: 5vh;
   background-color: white;
-  padding: 10px;
+  border-radius: 10px;
+}
+
+.play-again-btn {
+  width: 15vw;
+  height: auto;
 }
