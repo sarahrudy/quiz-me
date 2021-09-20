@@ -23,6 +23,14 @@ it('should record total answers correct after submitting', () => {
     .click()
   cy.get('.submit-btn')
     .click()
-  cy.get('.score-container > :nth-child(2)')
-    .contains('DAMN You got 1 out of 3')
+    .url().should('include', '/results')
+  cy.get('p')
+    .contains('You got 1 out of 3 correct!')
+})
+
+it('should have a way to return to the main page', () => {
+  cy.visit('http://localhost:3000/results')
+  cy.get('button')
+    .click()
+    .url().should('include', '/')
 })
