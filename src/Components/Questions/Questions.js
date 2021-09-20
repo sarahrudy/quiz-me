@@ -4,7 +4,9 @@ import '../Questions/Questions.css'
 import { fetchData } from '../../apiCalls'
 import { DifficultyContext } from '../../context/DifficultyContextProvider'
 import Score from '../Score/Score'
+import Results from '../Results/Results'
 import submitBtn from '../../Images/submit_btn.png'
+import { Link } from 'react-router-dom'
 
 const Questions = () => {
   const difficulty = useContext(DifficultyContext)
@@ -40,13 +42,14 @@ const Questions = () => {
 
   return(
     <div className="questions-container">
-      {difficulty.userScore && <Score />}
-      { triviaQuestions }
-      <div className="submit-container">
-        <img src= { submitBtn } className="submit-btn" alt="submit button"
-        onClick={() => validateAnswers()}></img>
+        { triviaQuestions }
+        <div className="submit-container">
+    { Object.keys(difficulty.submittedAnswers).length === 10  && <Link to='/results'>
+          <img src= { submitBtn } className="submit-btn" alt="submit button"
+          onClick={() => validateAnswers()}></img>
+    </Link> }
+        </div>
       </div>
-    </div>
   )
 }
 
