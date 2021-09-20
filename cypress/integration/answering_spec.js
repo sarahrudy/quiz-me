@@ -27,3 +27,10 @@ it('should record total answers correct after submitting', () => {
   cy.get('p')
     .contains('You got 1 out of 3 correct!')
 })
+
+it('should have a way to return to the main page', () => {
+  cy.visit('http://localhost:3000/results')
+  cy.get('button')
+    .click()
+    .url().should('include', '/')
+})
