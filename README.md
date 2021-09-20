@@ -32,8 +32,8 @@ After working with vanilla JavaScript, HTML, and CSS in the first two modules, M
 `npm install`
 3. Run the app from your terminal  
 `npm start`
-4. Open `http://localhost:3000` to view it in the browser  
-[http://localhost:3000](http://localhost:3000)
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser  
+
 ### Deployment
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
