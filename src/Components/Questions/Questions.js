@@ -4,6 +4,7 @@ import '../Questions/Questions.css'
 import { fetchData } from '../../apiCalls'
 import { DifficultyContext } from '../../context/DifficultyContextProvider'
 import Score from '../Score/Score'
+import Results from '../Results/Results'
 import submitBtn from '../../Images/submit_btn.png'
 import { Link } from 'react-router-dom'
 
@@ -41,7 +42,6 @@ const Questions = () => {
 
   return(
     <div className="questions-container">
-        {difficulty.userScore && <Score />}
         { triviaQuestions }
         <div className="submit-container">
     <Link to='/results'>
