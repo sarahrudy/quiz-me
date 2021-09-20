@@ -1,6 +1,6 @@
-h1 {
+.results-container {
   color: black;
   margin-top: 20vh;
   background-color: white;
-  padding: 20px;
+  padding: 10px;
 }
