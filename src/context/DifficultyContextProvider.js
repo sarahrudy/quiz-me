@@ -33,6 +33,14 @@ class DifficultyContextProvider extends Component {
     this.setState({ userScore: score})
   }
 
+  clearInputs = () => {
+    this.setState({ difficulty: '', 
+                    questions: [], 
+                    submittedAnswers: {}, 
+                    correctAnswers: [], 
+                    userScore: []})
+  }
+
   render() {
     return (
       <DifficultyContext.Provider value={
@@ -41,7 +49,9 @@ class DifficultyContextProvider extends Component {
           setQuestions: this.setQuestions, 
           submitAnswer: this.submitAnswer, 
           submitAnswerKey: this.submitAnswerKey, 
-          submitUserScore: this.submitUserScore }
+          submitUserScore: this.submitUserScore,
+          clearInputs: this.clearInputs
+         }
           }>
         {this.props.children}
       </DifficultyContext.Provider>

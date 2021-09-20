@@ -15,7 +15,7 @@ const Results = () => {
         <div>
           { difficulty.userScore && <p className='user-prompt'>You got {difficulty.userScore[0]} out of {difficulty.userScore[1]} correct!</p> }
         </div>
-        <Link to='/'><img src= { playAgain } className="play-again-btn"></img></Link>
+        <Link to='/'><img src= { playAgain } className="play-again-btn" onClick={ () => difficulty.clearInputs()}></img></Link>
       </div>
   )
 }
