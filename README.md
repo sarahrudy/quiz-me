@@ -6,7 +6,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### GIF
 
-![quiz-me-page-load](https://user-images.githubusercontent.com/78389005/134056206-9ba1af83-a89f-4f2a-94ba-f92deba36d35.gif)
+![quiz-me-page-load](https://user-images.githubusercontent.com/78389005/134056206-9ba1af83-a89f-4f2a-94ba-f92deba36d35.gif)  
+![Sep-20-2021 12-49-28](https://user-images.githubusercontent.com/78389005/134058281-c83ce138-815a-482e-bd6f-6ab8639a9c69.gif)
 
 ### Learning Goals
 
@@ -19,8 +20,7 @@ After working with vanilla JavaScript, HTML, and CSS in the first two modules, M
 
 ### Technologies Used
 + Context API
-+ React![Sep-20-2021 12-49-28](https://user-images.githubusercontent.com/78389005/134058281-c83ce138-815a-482e-bd6f-6ab8639a9c69.gif)
-
++ React
 + React Router
 + React Hooks
 + Cypress (testing framework)
