@@ -10,7 +10,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Learning Goals
 
-After working with vanilla JavaScript, HTML, and CSS in the first two modules, Module 3 introduces the magic of React. This project challenged us to implement yet another technology of our choice through self-teaching and exploration. We went with React's Context API so we could start working with global state management within an app. 
+After working with vanilla JavaScript, HTML, and CSS in the first two modules, Module 3 introduces the magic of React. This project challenged us to implement yet another technology of our choice through self-teaching and exploration. We went with **React's Context API** so we could start working with global state management. Context API provides a way to pass data through the component tree without having to pass props down manually at every level. 
 
 ### Contributors 
 + [Dave Leach](https://github.com/davidleach724)
