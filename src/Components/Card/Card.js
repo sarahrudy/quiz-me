@@ -15,6 +15,7 @@ const Card = ({ question, length, position }) => {
 
   useEffect(() => {
     submitCorrectAnswer(info.correctAnswerIndex)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
  return (

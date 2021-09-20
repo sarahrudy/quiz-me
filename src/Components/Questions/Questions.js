@@ -12,6 +12,7 @@ const Questions = () => {
   useEffect(() => {
     fetchData(difficulty.difficulty)
     .then(data => difficulty.setQuestions(data))
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const validateAnswers = () => {
