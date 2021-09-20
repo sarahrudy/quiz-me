@@ -1,6 +1,8 @@
 # Quiz Me
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).  
+
+[Project Spec](https://frontend.turing.edu/projects/module-3/stretch.html)
 
 ### GIF
 
@@ -8,7 +10,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Learning Goals
 
-After building several projects in vanilla JavaScript, HTML, and CSS in the first two modules, Module 3 introduces the magic of React. This project challenged us to implement yet another technology of our choice through self-teaching and exploration. We went with React's Context API so we could start working with global state management within an app. 
+After working with vanilla JavaScript, HTML, and CSS in the first two modules, Module 3 introduces the magic of React. This project challenged us to implement yet another technology of our choice through self-teaching and exploration. We went with React's Context API so we could start working with global state management within an app. 
 
 ### Contributors 
 + [Dave Leach](https://github.com/davidleach724)
@@ -24,13 +26,13 @@ After building several projects in vanilla JavaScript, HTML, and CSS in the firs
 
 ### Instructions for Running and Viewing 
 
-1. Clone this repo to your local computer
+1. Clone this repo to your local computer  
 `git clone git@github.com:sarahrudy/quiz-me.git`
-2. Install NPM packages 
+2. Install NPM packages  
 `npm install`
-3. Run the app from your terminal
+3. Run the app from your terminal  
 `npm start`
-4. Open `http://localhost:3000` to view it in the browser
+4. Open `http://localhost:3000` to view it in the browser  
 [http://localhost:3000](http://localhost:3000)
 ### Deployment
 
