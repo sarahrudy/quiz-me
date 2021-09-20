@@ -5,6 +5,7 @@ import { fetchData } from '../../apiCalls'
 import { DifficultyContext } from '../../context/DifficultyContextProvider'
 import Results from '../Results/Results'
 import submitBtn from '../../Images/submit_btn.png'
+import { Link } from 'react-router-dom'
 
 const Questions = () => {
   const difficulty = useContext(DifficultyContext)
@@ -12,7 +13,6 @@ const Questions = () => {
   useEffect(() => {
     fetchData(difficulty.difficulty)
     .then(data => difficulty.setQuestions(data))
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const validateAnswers = () => {
@@ -43,13 +43,12 @@ const Questions = () => {
     <div className="questions-container">
         { triviaQuestions }
         <div className="submit-container">
-          { Object.keys(difficulty.submittedAnswers).length === difficulty.correctAnswers.length  && <Link to='/results'>
+    { Object.keys(difficulty.submittedAnswers).length === difficulty.correctAnswers.length  && <Link to='/results'>
           <img src= { submitBtn } className="submit-btn" alt="submit button"
           onClick={() => validateAnswers()}></img>
-          </Link> }
+    </Link> }
         </div>
       </div>
-    </div>
   )
 }
 
