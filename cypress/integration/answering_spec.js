@@ -30,7 +30,7 @@ it('should record total answers correct after submitting', () => {
 
 it('should have a way to return to the main page', () => {
   cy.visit('http://localhost:3000/results')
-  cy.get('button')
+  cy.get('.play-again-btn')
     .click()
     .url().should('include', '/')
 })
