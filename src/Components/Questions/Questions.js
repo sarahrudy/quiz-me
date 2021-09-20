@@ -3,14 +3,13 @@ import Card from '../Card/Card'
 import '../Questions/Questions.css'
 import { fetchData } from '../../apiCalls'
 import { DifficultyContext } from '../../context/DifficultyContextProvider'
-import Score from '../Score/Score'
 import Results from '../Results/Results'
 import submitBtn from '../../Images/submit_btn.png'
 import { Link } from 'react-router-dom'
 
 const Questions = () => {
   const difficulty = useContext(DifficultyContext)
-  
+
   useEffect(() => {
     fetchData(difficulty.difficulty)
     .then(data => difficulty.setQuestions(data))
@@ -25,13 +24,13 @@ const Questions = () => {
 
       return arr
     }, [0, 0])
-    
+
     difficulty.submitUserScore(scoreData)
   }
 
   const triviaQuestions = difficulty.questions.map(question => {
     return (
-      <Card 
+      <Card
         question = {question}
         position = {difficulty.questions.indexOf(question)}
         length = {difficulty.questions.length}
