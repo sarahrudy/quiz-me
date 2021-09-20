@@ -47,7 +47,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 + User will be able to choose how many questions they want to answer - 10, 20, or 30
 + User will be able to see which questions they got correct and which questions they got wrong 
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
