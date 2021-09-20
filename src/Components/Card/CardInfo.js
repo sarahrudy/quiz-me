@@ -1,5 +1,5 @@
 class CardInfo {
-  constructor (data, position) {
+  constructor (data) {
     this.data = data
     this.category = data.category
     this.question = data.question

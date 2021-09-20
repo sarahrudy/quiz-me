@@ -3,7 +3,6 @@ import Card from '../Card/Card'
 import '../Questions/Questions.css'
 import { fetchData } from '../../apiCalls'
 import { DifficultyContext } from '../../context/DifficultyContextProvider'
-import Results from '../Results/Results'
 import submitBtn from '../../Images/submit_btn.png'
 import { Link } from 'react-router-dom'
 
@@ -13,6 +12,7 @@ const Questions = () => {
   useEffect(() => {
     fetchData(difficulty.difficulty)
     .then(data => difficulty.setQuestions(data))
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   const validateAnswers = () => {
