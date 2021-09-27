@@ -4,6 +4,8 @@
 
 Quiz Me is an interactive trivia app that allows the user to choose from three difficulty levels - easy, medium, or hard. After the user chooses how spicy they want their quesitons to be, they are redirected to a page with 10 random questions from the API. After all 10 questions are answered, the user is able to click on the `submit` button to see how many questions they answered correctly. The results page also gives the user the option to `play again` which routes them to the home page to start the fun all over again. 
 
+[Deployed Application](https://ruthless-wish.surge.sh/)
+
 ### GIF
 **Choose difficulty level to load questions from API**
 
